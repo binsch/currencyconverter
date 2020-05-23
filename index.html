@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Currency Converter</title>
+        <link rel="stylesheet" type="text/css" href="/static/style.css">
+    </head>
+    <body>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/about/">About</a></li>
+        </ul>
+
+        <h1>Convert</h1>
+
+        <form action="/redirect/" method="POST">
+            <div>
+                <input name="value" type="number" step="0.01" min="0" value="1">
+
+                <select id="from" name="from">
+                    <option id="EUR" value="EUR" selected="selected">EUR €</option>
+                    <option id="USD" value="USD">USD $</option>
+                    <option id="GBP" value="GBP">GBP £</option>
+                    <option id="JPY" value="JPY">JPY ¥</option>
+                    <option id="AUD" value="AUD">AUD</option>
+                    <option id="CHF" value="CHF">CHF</option>
+                    <option id="CNY" value="CNY">CNY</option>
+                    <option id="HKD" value="HKD">HKD</option>
+                    <option id="NZD" value="NZD">NZD</option>
+                    <option id="SEK" value="SEK">SEK</option>
+                    <option id="KRW" value="KRW">KRW</option>
+                    <option id="SGD" value="SGD">SGD</option>
+                    <option id="NOK" value="NOK">NOK</option>
+                    <option id="MXN" value="MXN">MXN</option>
+                    <option id="INR" value="INR">INR</option>
+                    <option id="RUB" value="RUB">RUB</option>
+                    <option id="ZAR" value="ZAR">ZAR</option>
+                    <option id="TRY" value="TRY">TRY</option>
+                    <option id="BRL" value="BRL">BRL</option>
+                </select>
+
+                <p id="arrow">→</p>
+                <select id="to" name="to">
+                    <option id="EUR" value="EUR">EUR €</option>
+                    <option id="USD" value="USD" selected="selected">USD $</option>
+                    <option id="GBP" value="GBP">GBP £</option>
+                    <option id="JPY" value="JPY">JPY ¥</option>
+                    <option id="AUD" value="AUD">AUD</option>
+                    <option id="CHF" value="CHF">CHF</option>
+                    <option id="CNY" value="CNY">CNY</option>
+                    <option id="HKD" value="HKD">HKD</option>
+                    <option id="NZD" value="NZD">NZD</option>
+                    <option id="SEK" value="SEK">SEK</option>
+                    <option id="KRW" value="KRW">KRW</option>
+                    <option id="SGD" value="SGD">SGD</option>
+                    <option id="NOK" value="NOK">NOK</option>
+                    <option id="MXN" value="MXN">MXN</option>
+                    <option id="INR" value="INR">INR</option>
+                    <option id="RUB" value="RUB">RUB</option>
+                    <option id="ZAR" value="ZAR">ZAR</option>
+                    <option id="TRY" value="TRY">TRY</option>
+                    <option id="BRL" value="BRL">BRL</option>
+                </select>
+            </div>
+            
+            <div><input type="submit" value="CONVERT"></div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(231, 231, 231);
+  min-height: 100%;
+}
+
+input[type=number] {
+  padding: none;
+  margin: none;
+  height: 65px;
+  width: 150px;
+  border: none;
+  border-bottom: 3px solid #111;
+  border-radius: 4px;
+  color: #293241;
+  text-align: center;
+  font-size: 30pt;
+  background-color: rgb(240, 240, 240);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+form {
+  display: inline-block;
+  margin-top: 10%;
+  width: 1000px;
+  min-height: 100%;
+}
+
+h1 {
+  margin-top: 5%;
+  color: #293241;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+select {
+  width: 100px;
+  height: 70px;
+  padding: none;
+  margin: none;
+  margin-left: 5px;
+  border: none;
+  border-bottom: 3px solid #111;
+  background-color: #f1f1f1;
+  font-size: 20pt;
+  vertical-align: top;
+}
+
+#arrow {
+  display: inline;
+  color: #293241;
+  text-align: center;
+  font-size: 30pt;
+  color: #111;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#result {
+  display: inline;
+  color: #293241;
+  text-align: center;
+  font-size: 30pt;
+  color: #111;
+}
+
+input[type=submit], #send {
+  background-color: #111;
+  border: none;
+  color: #f1f1f1;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 20px 2px;
+  cursor: pointer;
+  font-size: 15pt;
+}
+
+#lastupdated {
+  margin-top: 100px;
+  vertical-align: bottom;
+  font-size: 12pt;
+}
+
+#text {
+  margin-top: 100px;
+  font-size: 15pt;
+}
