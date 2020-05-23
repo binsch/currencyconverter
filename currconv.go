@@ -170,6 +170,7 @@ func redirectHandler(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, url, 302)
 }
 
+// returns PORT environment variable or 8080 by default
 func getPort() string {
 	port := os.Getenv("PORT")
 	if port == "" {
@@ -179,7 +180,6 @@ func getPort() string {
 }
 
 func main() {
-	fmt.Println(apiKey)
 	b := getData()
 	data = decodeJSON(b)
 
@@ -191,5 +191,6 @@ func main() {
 
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))
 
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	port := getPort()
+	log.Fatal(http.ListenAndServe(":" + port, nil))
 }
