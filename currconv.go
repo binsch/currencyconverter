@@ -13,21 +13,11 @@ import (
 	"time"
 )
 
-var apiKey string
+var apiKey string = os.Getenv("fixer_api_key")
 var data Data
 
 // cache templates for later use
 var templates = template.Must(template.ParseFiles("index.html", "convert.html", "contact.html", "about.html"))
-
-// reads and returns api key stored in filename
-func readAPIKey(filename string) string {
-	var data, err = ioutil.ReadFile("key.txt")
-	if err != nil {
-		fmt.Println("File reading error", err)
-		log.Fatal(err)
-	}
-	return string(data)
-}
 
 // Data stores data from api request for re-use
 type Data struct {
@@ -189,8 +179,7 @@ func getPort() string {
 }
 
 func main() {
-	apiKey = readAPIKey("key.txt")
-
+	fmt.Println(apiKey)
 	b := getData()
 	data = decodeJSON(b)
 
