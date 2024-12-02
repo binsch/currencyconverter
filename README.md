@@ -1,8 +1,6 @@
 # currencyconverter
 A small website that lets you convert between different currencies.
 
-Check it out yourself: https://currconversion.herokuapp.com/
-
 #
 
 * backend written in Go
